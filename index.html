@@ -1,14 +1,144 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Critkal's Portifolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-    <link type="javascript" href="javascript/main.js"/>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Critkal's Portifolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  <link type="javascript" href="javascript/main.js" />
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+
 </head>
+
 <body>
-    <p>Teste</p>
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a id ="myhome" class="navbar-brand" href="#">Critkal</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutme">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#mycontact">Contato</a>
+          </li>
+        </ul>
+        
+      </div>
+    </nav>
+  </header>
+
+  <main role="main">
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="first-slide" src="assets/back.jpg"
+            alt="First slide">
+          <div class="container">
+            <div class="carousel-caption text-left">
+              <h1>Gabriel Victor.</h1>
+                <p>Desenvolvedor de Software</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Marketing messaging and featurettes
+      ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+
+      <div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="gen-img" src="assets/laptop.png"
+              alt="Generic placeholder image" width="140" height="140">
+            <h2>Linguagens de programação</h2>
+            <p>C++, C#, Java, JavaScript, Python..</p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="gen-img" src="assets/laptop 2.png"
+              alt="Generic placeholder image" width="140" height="140">
+            <h2>Serviços</h2>
+            <p>Amazon AWS, Amazon s3, Microsoft Windows Server, Microsoft SQL Server, Postgres, MySQL, MongoDB.</p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="gen-img" src="assets/social.png"
+              alt="Generic placeholder image" width="140" height="140">
+            <h2>Habilidades</h2>
+            <p>Scrum, Comunicação efetiva em equipe, Trabalho em equipe, Liderança, Inglês avançado, Italiano básico.</p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div id="aboutme" class="col-md-7">
+            <h2 class="featurette-heading">Sobre <span class="text-muted">Gabriel Victor:</span></h2>
+            <p class="lead">Tenho interesses na engenharia de software e em todos os processos do desenvolvimento 
+              de um software, desde a ideia até a execução e manutenção do mesmo. Busco aprender e aplicar práticas 
+              que otimizam o desenvolvimento geral do Software..</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" src="assets/me.jpg">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div id="mycontact" class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Contatos <span class="text-muted"></span></h2>
+            <p class="lead">E-mail: gvictor.assis@gmailcom</p>
+            <p class="lead">Telefone: (84) 99645-9266</p>
+            <p class="lead">Facebook: <a href="https://www.facebook.com/critkal">Gabriel Victor</a></p>
+            <p class="lead">GitHub: <a href="https://github.com/critkal">Critkal</a></p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" src="assets/me2.jpg">
+          </div>
+        </div>
+        
+        <!-- /END THE FEATURETTES -->
+
+      </div><!-- /.container -->
+
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2017-2018 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+  </main>
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+  <script src="../../assets/js/vendor/popper.min.js"></script>
+  <script src="../../dist/js/bootstrap.min.js"></script>
+  <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+  <script src="../../assets/js/vendor/holder.min.js"></script>
 </body>
+
 </html>
